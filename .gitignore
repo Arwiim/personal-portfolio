@@ -1,0 +1,14 @@
+*.log
+*.pot
+*.pyc
+__pycache__/
+blog/__pycache__/
+applications/blog/migrations/
+applications/portfolio/__pycache__/
+applications/blog/migrations/
+applications/portfolio/migrations/
+local_settings.py
+db.sqlite3
+/collected_static/
+/media
+/staticfiles

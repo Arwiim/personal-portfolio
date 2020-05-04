@@ -1,0 +1,31 @@
+{% load static %}
+<nav id="topNav" class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'app_portfolio:home' %}">
+      <img src="{% static "img/Logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="GabrielLogo">
+      <span>Gabriel Moreno Moreyra</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% static "pdf/GabrielCV.pdf" %}" target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% static "pdf/GabrielCV.pdf" %}" target="_blank">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/gabrielmorenook/" target="_blank">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/Arwiim" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a role="button" href="{% url 'app_blog:all_blogs' %}" class="btn btn-primary">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
